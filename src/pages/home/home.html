@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+
+    <ion-title>Meu diario</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="adicionar()">
+        <ion-icon name="camera"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="sair()">
+        <ion-icon name="close-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="cor">
+
+
+        <ion-card-content>
+
+          <ion-item>
+            <ion-label floating>Digite aqui...</ion-label>
+            <ion-input type="text"  type=submit  maxlength="50" #txt></ion-input>
+          </ion-item>
+          <button ion-button color="secondary" type=submit block (click)="logIn(txt.value)"   >
+              Adicionar
+          </button>
+
+          <p>{{txt}}</p>
+
+
+        </ion-card-content>
+
+
+</ion-content>

@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Diario com Fotos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="cor">
+    <ion-card>
+        <img src="{{ photo }}" />
+        <ion-card-content>
+          <ion-card-title>
+
+            <ion-input placeholder="Digite o titulo aqui..."type="text" maxlength="50"></ion-input>
+            </ion-card-title>
+          <p>
+
+            <ion-input placeholder="Digite aqui..." type="text" maxlength="50"></ion-input>
+          </p>
+          <button ion-button  block (click)="takePicture()">Câmera</button>
+          <button ion-button  block>Salvar</button>
+        </ion-card-content>
+      </ion-card>
+
+
+
+
+<ion-footer padding>
+
+  </ion-footer>
